@@ -22,8 +22,10 @@ a {
 body {
   background-color: white; }
 
-.nav-logo {
-  height: 130px; }
+nav {
+  border-radius: 30px; }
+  nav .nav-logo {
+    height: 130px; }
 
 /* FOOTER */
 footer {
@@ -32,7 +34,8 @@ footer {
   align-items: center;
   text-align: center;
   height: 200px;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  border-radius: 30px; }
   footer div {
     margin: 1px 80px; }
     footer div img {
@@ -45,7 +48,8 @@ a:link, a:visited, a:active {
 
 /* estilo de INDEX */
 main #carouselExampleIndicators {
-  margin-top: 40px; }
+  border-radius: 50px;
+  margin: 20px 40px; }
 
 main .home-main-div-cat-h2 {
   text-align: center;
@@ -244,33 +248,92 @@ main .qsomos-main-section .qsomos-main-section-ubi {
 
 @media only screen and (max-width: 900px) {
   .nav-logo {
-    height: 70px; }
-    .nav-logo .navbar {
-      z-index: 2; }
-      .nav-logo .navbar .ul-desplegable {
-        position: absolute;
-        top: 100px;
-        left: 0px;
-        background-color: #f8f9fa;
-        width: 100%; }
-        .nav-logo .navbar .ul-desplegable ul {
-          padding-left: 20px; }
-  .home-main-div-categories {
+    height: 48px; }
+  /* estilo de INDEX */
+  main #carouselExampleIndicators {
+    margin-top: 20px; }
+  main .home-main-div-cat-h2 {
+    text-align: center;
+    padding-top: 50px; }
+  main .home-main-div-categories {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px; }
-    .home-main-div-categories .home-main-div-categories__img {
-      height: 48px;
+    height: 100px;
+    margin-top: 1px; }
+    main .home-main-div-categories .home-main-div-categories__img {
+      height: 70px;
       animation-name: aparecer;
       animation-duration: 6s;
-      margin: 10px; }
+      margin: 25px; }
+  main .home-main-div-destacados {
+    text-align: center;
+    margin-bottom: 30px; }
+  main #verMas {
+    text-align: center;
+    margin-bottom: 30px; }
+  /* estilo PRODUCTOS */
+  main .prod-main-section-banner {
+    text-align: center;
+    height: 400px;
+    padding-top: 50px; }
+    main .prod-main-section-banner .prod-main-section-banner-a {
+      /* boton */
+      position: absolute;
+      right: 60px;
+      bottom: 150px;
+      width: 110px;
+      height: 40px;
+      padding: 9px;
+      background-color: #A88FAC;
+      border-radius: 90px;
+      font-size: 15px; }
+  main .prod-main-section-titulo {
+    text-align: center;
+    padding-top: 20px;
+    animation-name: aparecer;
+    animation-duration: 6s; }
+  /* estilo LIQUIDACION */
+  main .sale-main-section {
+    background-color: white;
+    color: black;
+    padding: 20px; }
+    main .sale-main-section .sale-main-section-h1 {
+      text-align: center;
+      animation-name: aparecer;
+      animation-duration: 6s; }
+  main span {
+    text-decoration: line-through; }
+  /* estilo de QSOMOS */
+  main .qsomos-main-section .qsomos-main-section-desc {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    animation-name: aparecer;
+    animation-duration: 5s;
+    margin: 30px; }
+    main .qsomos-main-section .qsomos-main-section-desc h1 {
+      font-size: 30px;
+      padding-bottom: 10px; }
+  main .qsomos-main-section .img-thumbnail {
+    border-radius: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #A88FAC; }
+  main .qsomos-main-section .qsomos-main-section-video {
+    display: none; }
+  main .qsomos-main-section .qsomos-main-section-ubi {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: black;
+    margin: 5px; }
+    main .qsomos-main-section .qsomos-main-section-ubi h2, main .qsomos-main-section .qsomos-main-section-ubi p {
+      text-align: center; }
   footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 15px;
-    height: 600px; }
-    footer div {
-      margin: 20px; } }
+    height: 400px; } }
