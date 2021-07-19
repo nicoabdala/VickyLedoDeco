@@ -19,14 +19,10 @@ body{
     background-color: $colorFondo;
 }
 
-
-nav{
-    border-radius: 30px;
-
-    .nav-logo{
-        height: 130px;
-    }
+.nav-logo{
+    height: 130px;
 }
+
 
 /* FOOTER */ 
 
@@ -37,10 +33,9 @@ footer{
     text-align: center;
     height: 200px;
     background-color: $colorBanner;
-    border-radius: 30px;
 
     div {
-        margin: 1px 80px;
+        margin: 10px 80px;
 
         img {
             height: 50px;
@@ -66,14 +61,14 @@ main{
 
     .home-main-div-cat-h2{
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     .home-main-div-categories{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 250px;
+        height: 150px;
 
         img{
             height: 90px;
@@ -99,12 +94,7 @@ main{
 /* estilo PRODUCTOS */
 
 main{
-    .prod-main-section-titulo{
-        text-align: center;
-        padding-top: 20px;
-        animation-name: aparecer;
-        animation-duration: 6s;
-    }
+    
     .prod-main-section-banner{
         text-align: center;
         height: 400px;
@@ -125,6 +115,20 @@ main{
             color: $colorHover;
         }
     }
+
+    .prod-main-section-titulo{
+        text-align: center;
+        padding: 20px;
+
+        animation-name: aparecer;
+        animation-duration: 6s;
+    }
+
+    .botonesGaleria{
+        margin: 10px;
+        animation-name: aparecer;
+        animation-duration: 6s;
+    }
 }
 
 /* estilo LIQUIDACION */
@@ -139,10 +143,17 @@ main{
             text-align: center;
             animation-name: aparecer;
             animation-duration: 6s;
+            padding-bottom: 40px;
         }
 
         span{
             text-decoration: line-through;
+        }
+
+        .botonesGaleria{
+            margin: 10px;
+            animation-name: aparecer;
+            animation-duration: 6s;
         }
     }
 }
@@ -222,12 +233,13 @@ main{
 main{
 
     #carouselExampleIndicators{
-        margin-top: 20px;
+        margin: 20px 20px;
+
     }
 
     .home-main-div-cat-h2{
         text-align: center;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
     .home-main-div-categories{
@@ -238,7 +250,7 @@ main{
         margin-top: 1px;
 
         .home-main-div-categories__img{
-            height: 60px;
+            height: 50px;
             animation-name: aparecer;
             animation-duration: 6s;
             margin: 10px;            
@@ -286,6 +298,10 @@ main{
         animation-duration: 6s;
     }
 
+    .botonesGaleria{
+        font-size: 50%;
+        margin: 5px;
+    }
 }
 
 /* estilo LIQUIDACION */
@@ -301,6 +317,11 @@ main{
             animation-name: aparecer;
             animation-duration: 6s;
         } 
+
+        .botonesGaleria{
+            font-size: 50%;
+            margin: 5px;
+        }
     }
 
     span{
@@ -353,15 +374,24 @@ footer{
     align-items: center;
     flex-direction: column;
     font-size: 15px;
-    height: 600px;
+    height: 500px;
+
+    div {
+        margin: 5px 40px;
+
+        img {
+            height: 50px;
+            margin: 15px;
+        } 
+    }
 }
 
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (min-width: 601px) and (max-width: 900px){
 
-    .nav-logo {
-        height: 48px;
+    .nav-logo{
+        height: 78px;
     }
 
     /* estilo de INDEX */
@@ -369,19 +399,19 @@ footer{
 main{
 
     #carouselExampleIndicators{
-        margin-top: 20px;
+        margin: 20px 30px;
     }
 
     .home-main-div-cat-h2{
         text-align: center;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
     .home-main-div-categories{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 120px;
         margin-top: 1px;
 
         .home-main-div-categories__img{
@@ -416,7 +446,7 @@ main{
         .prod-main-section-banner-a{   /* boton */
             position: absolute;
             right: 60px;
-            bottom: 150px;
+            bottom: 160px;
             width: 110px;
             height: 40px;
             padding: 9px;
@@ -500,7 +530,7 @@ footer{
     align-items: center;
     flex-direction: column;
     font-size: 15px;
-    height: 400px;
+    height: 500px;
 }
 
 }

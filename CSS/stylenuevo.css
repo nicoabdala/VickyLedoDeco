@@ -22,10 +22,8 @@ a {
 body {
   background-color: white; }
 
-nav {
-  border-radius: 30px; }
-  nav .nav-logo {
-    height: 130px; }
+.nav-logo {
+  height: 130px; }
 
 /* FOOTER */
 footer {
@@ -34,10 +32,9 @@ footer {
   align-items: center;
   text-align: center;
   height: 200px;
-  background-color: whitesmoke;
-  border-radius: 30px; }
+  background-color: whitesmoke; }
   footer div {
-    margin: 1px 80px; }
+    margin: 10px 80px; }
     footer div img {
       height: 50px;
       margin: 15px; }
@@ -53,13 +50,13 @@ main #carouselExampleIndicators {
 
 main .home-main-div-cat-h2 {
   text-align: center;
-  padding-top: 100px; }
+  padding-top: 50px; }
 
 main .home-main-div-categories {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px; }
+  height: 150px; }
   main .home-main-div-categories img {
     height: 90px;
     margin: 30px; }
@@ -75,12 +72,6 @@ main #verMas {
   margin-bottom: 30px; }
 
 /* estilo PRODUCTOS */
-main .prod-main-section-titulo {
-  text-align: center;
-  padding-top: 20px;
-  animation-name: aparecer;
-  animation-duration: 6s; }
-
 main .prod-main-section-banner {
   text-align: center;
   height: 400px;
@@ -99,6 +90,17 @@ main .prod-main-section-banner {
   main .prod-main-section-banner .prod-main-section-banner-a:hover {
     color: #EFCEFA; }
 
+main .prod-main-section-titulo {
+  text-align: center;
+  padding: 20px;
+  animation-name: aparecer;
+  animation-duration: 6s; }
+
+main .botonesGaleria {
+  margin: 10px;
+  animation-name: aparecer;
+  animation-duration: 6s; }
+
 /* estilo LIQUIDACION */
 main .sale-main-section {
   background-color: white;
@@ -107,9 +109,14 @@ main .sale-main-section {
   main .sale-main-section .sale-main-section-h1 {
     text-align: center;
     animation-name: aparecer;
-    animation-duration: 6s; }
+    animation-duration: 6s;
+    padding-bottom: 40px; }
   main .sale-main-section span {
     text-decoration: line-through; }
+  main .sale-main-section .botonesGaleria {
+    margin: 10px;
+    animation-name: aparecer;
+    animation-duration: 6s; }
 
 /* estilo de QSOMOS */
 main .qsomos-main-section .qsomos-main-section-desc {
@@ -159,10 +166,10 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     height: 48px; }
   /* estilo de INDEX */
   main #carouselExampleIndicators {
-    margin-top: 20px; }
+    margin: 20px 20px; }
   main .home-main-div-cat-h2 {
     text-align: center;
-    padding-top: 50px; }
+    padding-top: 30px; }
   main .home-main-div-categories {
     display: flex;
     justify-content: center;
@@ -170,7 +177,7 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     height: 100px;
     margin-top: 1px; }
     main .home-main-div-categories .home-main-div-categories__img {
-      height: 60px;
+      height: 50px;
       animation-name: aparecer;
       animation-duration: 6s;
       margin: 10px; }
@@ -201,6 +208,9 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     padding-top: 20px;
     animation-name: aparecer;
     animation-duration: 6s; }
+  main .botonesGaleria {
+    font-size: 50%;
+    margin: 5px; }
   /* estilo LIQUIDACION */
   main .sale-main-section {
     background-color: white;
@@ -210,6 +220,9 @@ main .qsomos-main-section .qsomos-main-section-ubi {
       text-align: center;
       animation-name: aparecer;
       animation-duration: 6s; }
+    main .sale-main-section .botonesGaleria {
+      font-size: 50%;
+      margin: 5px; }
   main span {
     text-decoration: line-through; }
   /* estilo de QSOMOS */
@@ -244,22 +257,27 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     align-items: center;
     flex-direction: column;
     font-size: 15px;
-    height: 600px; } }
+    height: 500px; }
+    footer div {
+      margin: 5px 40px; }
+      footer div img {
+        height: 50px;
+        margin: 15px; } }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 601px) and (max-width: 900px) {
   .nav-logo {
-    height: 48px; }
+    height: 78px; }
   /* estilo de INDEX */
   main #carouselExampleIndicators {
-    margin-top: 20px; }
+    margin: 20px 30px; }
   main .home-main-div-cat-h2 {
     text-align: center;
-    padding-top: 50px; }
+    padding-top: 30px; }
   main .home-main-div-categories {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 120px;
     margin-top: 1px; }
     main .home-main-div-categories .home-main-div-categories__img {
       height: 70px;
@@ -281,7 +299,7 @@ main .qsomos-main-section .qsomos-main-section-ubi {
       /* boton */
       position: absolute;
       right: 60px;
-      bottom: 150px;
+      bottom: 160px;
       width: 110px;
       height: 40px;
       padding: 9px;
@@ -336,4 +354,4 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     align-items: center;
     flex-direction: column;
     font-size: 15px;
-    height: 400px; } }
+    height: 500px; } }
