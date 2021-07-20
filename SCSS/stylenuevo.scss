@@ -5,7 +5,7 @@
 * {overflow-x : hidden}
 * { font-family: 'Roboto';
     font-style: normal;}
-a { color: whitesmoke;} 
+a { color: $colorBanner;} 
 
 $colorFondo: white;
 $colorBoton: #A88FAC;
@@ -234,7 +234,6 @@ main{
 
     #carouselExampleIndicators{
         margin: 20px 20px;
-
     }
 
     .home-main-div-cat-h2{
