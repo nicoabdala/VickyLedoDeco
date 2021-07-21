@@ -129,6 +129,23 @@ main{
         animation-name: aparecer;
         animation-duration: 6s;
     }
+
+    .titulo-card {
+        padding: 20px;
+        }
+        
+        .link-card {
+        color: black;
+        }
+        
+    .link-card:hover {
+        background-color: rgb(110, 108, 108);
+        color: white;
+    }
+    
+    .contenedor-card {
+        margin: 20px;
+    }
 }
 
 /* estilo LIQUIDACION */
@@ -148,6 +165,23 @@ main{
 
         span{
             text-decoration: line-through;
+        }
+
+        .titulo-card {
+            padding: 20px;
+            }
+            
+            .link-card {
+            color: black;
+            }
+            
+        .link-card:hover {
+            background-color: rgb(110, 108, 108);
+            color: white;
+        }
+        
+        .contenedor-card {
+            margin: 20px;
         }
 
         .botonesGaleria{
