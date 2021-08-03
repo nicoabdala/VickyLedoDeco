@@ -19,10 +19,14 @@ body{
     background-color: $colorFondo;
 }
 
-.nav-logo{
-    height: 130px;
-}
+.navbar{
+    text-align: right;
 
+    .nav-logo{
+        height: 130px;
+        margin-left: 20px;
+    }
+}
 
 /* FOOTER */ 
 
@@ -83,6 +87,11 @@ main{
     .home-main-div-destacados{
         text-align: center;
         margin-bottom: 30px;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
     }
 
     #verMas{
@@ -263,8 +272,13 @@ main{
 
 @media only screen and (max-width:600px) {
 
-    .nav-logo {
-        height: 48px;
+    .navbar{
+        text-align: right;
+    
+        .nav-logo{
+            height: 64px;
+            margin-left: 10px;
+        }
     }
 
     .btn{
@@ -346,7 +360,7 @@ main{
 
     .botonesGaleria{
         font-size: 50%;
-        margin: 5px;
+        margin: 2px;
     }
 }
 
@@ -356,7 +370,7 @@ main{
     .sale-main-section{
         background-color: $colorFondo;
         color: black;
-        padding: 20px;
+        padding: 5px;
 
         .sale-main-section-h1{
             text-align: center;
@@ -366,7 +380,7 @@ main{
 
         .botonesGaleria{
             font-size: 50%;
-            margin: 5px;
+            margin: 2px;
         }
     }
 
@@ -450,8 +464,13 @@ footer{
 
 @media only screen and (min-width: 601px) and (max-width: 900px){
 
-    .nav-logo{
-        height: 78px;
+    .navbar{
+        text-align: right;
+    
+        .nav-logo{
+            height: 78px;
+            margin-left: 10px;
+        }
     }
 
     /* estilo de INDEX */
@@ -606,8 +625,13 @@ footer{
 
 @media only screen and (min-width: 901px) and (max-width: 1200px){
 
-    .nav-logo{
-        height: 78px;
+    .navbar{
+        text-align: right;
+    
+        .nav-logo{
+            height: 78px;
+            margin-left: 10px;
+        }
     }
 
     /* estilo de INDEX */

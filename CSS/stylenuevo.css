@@ -22,8 +22,11 @@ a {
 body {
   background-color: white; }
 
-.nav-logo {
-  height: 130px; }
+.navbar {
+  text-align: right; }
+  .navbar .nav-logo {
+    height: 130px;
+    margin-left: 20px; }
 
 /* FOOTER */
 footer {
@@ -66,6 +69,10 @@ main .home-main-div-categories {
 main .home-main-div-destacados {
   text-align: center;
   margin-bottom: 30px; }
+
+main .row {
+  display: flex;
+  flex-wrap: wrap; }
 
 main #verMas {
   text-align: center;
@@ -187,8 +194,11 @@ main .qsomos-main-section .qsomos-main-section-ubi {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
-  .nav-logo {
-    height: 48px; }
+  .navbar {
+    text-align: right; }
+    .navbar .nav-logo {
+      height: 64px;
+      margin-left: 10px; }
   .btn {
     font-size: 12px; }
   /* estilo de INDEX */
@@ -237,19 +247,19 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     animation-duration: 6s; }
   main .botonesGaleria {
     font-size: 50%;
-    margin: 5px; }
+    margin: 2px; }
   /* estilo LIQUIDACION */
   main .sale-main-section {
     background-color: white;
     color: black;
-    padding: 20px; }
+    padding: 5px; }
     main .sale-main-section .sale-main-section-h1 {
       text-align: center;
       animation-name: aparecer;
       animation-duration: 6s; }
     main .sale-main-section .botonesGaleria {
       font-size: 50%;
-      margin: 5px; }
+      margin: 2px; }
   main span {
     text-decoration: line-through; }
   /* estilo de QSOMOS */
@@ -298,8 +308,11 @@ main .qsomos-main-section .qsomos-main-section-ubi {
         margin: 15px; } }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  .nav-logo {
-    height: 78px; }
+  .navbar {
+    text-align: right; }
+    .navbar .nav-logo {
+      height: 78px;
+      margin-left: 10px; }
   /* estilo de INDEX */
   main #carouselExampleIndicators {
     margin: 20px 30px; }
@@ -394,8 +407,11 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     height: 500px; } }
 
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
-  .nav-logo {
-    height: 78px; }
+  .navbar {
+    text-align: right; }
+    .navbar .nav-logo {
+      height: 78px;
+      margin-left: 10px; }
   /* estilo de INDEX */
   main .home-main-div-destacados {
     text-align: center;
