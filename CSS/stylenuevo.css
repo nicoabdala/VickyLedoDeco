@@ -227,8 +227,9 @@ main .qsomos-main-section .qsomos-main-section-ubi {
   /* estilo PRODUCTOS */
   main .prod-main-section-banner {
     text-align: center;
-    height: 200px;
-    padding-top: 50px; }
+    height: 150px;
+    padding-top: 20px;
+    margin: 1px 10px; }
     main .prod-main-section-banner .prod-main-section-banner-a {
       /* boton */
       position: absolute;
@@ -339,8 +340,9 @@ main .qsomos-main-section .qsomos-main-section-ubi {
   /* estilo PRODUCTOS */
   main .prod-main-section-banner {
     text-align: center;
-    height: 400px;
-    padding-top: 50px; }
+    height: 350px;
+    padding-top: 30px;
+    margin: 1px 15px; }
     main .prod-main-section-banner .prod-main-section-banner-a {
       /* boton */
       position: absolute;
