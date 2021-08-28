@@ -97,7 +97,7 @@ main .prod-main-section-banner {
     top: 220px;
     padding: 10px; }
   main .prod-main-section-banner .prod-main-section-banner-a:hover {
-    color: black; }
+    background-color: pink; }
 
 main .prod-main-section-titulo {
   text-align: center;
@@ -117,27 +117,30 @@ main .botonesGaleria:hover {
   background-color: #EFCEFA;
   color: black; }
 
-main .gallery {
+main .container {
+  width: 100%;
+  max-width: 1300px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  main .gallery .contenedor-card {
-    margin: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-    main .gallery .contenedor-card h5 {
-      background-color: pink;
-      color: black;
-      font-size: 20px;
-      padding: 10px; }
-    main .gallery .contenedor-card p {
-      text-align: center; }
-  main .gallery .link-card {
-    color: black; }
-  main .gallery span {
-    text-decoration: line-through; }
-
-main .link-card:hover {
-  background-color: pink; }
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  main .container .card {
+    width: 20%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.25s; }
+    main .container .card img {
+      width: 250px;
+      height: 200px; }
+    main .container .card h5 {
+      font-weight: 600; }
+    main .container .card p {
+      font-weight: 300; }
+    main .container .card a {
+      font-weight: 300;
+      color: black; }
 
 /* estilo LIQUIDACION */
 main .sale-main-section {
@@ -148,26 +151,30 @@ main .sale-main-section {
     text-align: center;
     animation-name: aparecer;
     animation-duration: 6s; }
-  main .sale-main-section .gallery {
+  main .sale-main-section .container {
+    width: 100%;
+    max-width: 1300px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    main .sale-main-section .gallery .contenedor-card {
-      margin: 20px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-      main .sale-main-section .gallery .contenedor-card h5 {
-        background-color: pink;
-        color: black;
-        font-size: 20px;
-        padding: 10px; }
-      main .sale-main-section .gallery .contenedor-card p {
-        text-align: center; }
-    main .sale-main-section .gallery .link-card {
-      color: black; }
-    main .sale-main-section .gallery span {
-      text-decoration: line-through; }
-  main .sale-main-section .link-card:hover {
-    background-color: pink; }
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; }
+    main .sale-main-section .container .card {
+      width: 20%;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 10px;
+      text-align: center;
+      transition: all 0.25s; }
+      main .sale-main-section .container .card img {
+        width: 250px;
+        height: 220px; }
+      main .sale-main-section .container .card h5 {
+        font-weight: 600; }
+      main .sale-main-section .container .card p {
+        font-weight: 300; }
+      main .sale-main-section .container .card a {
+        font-weight: 300;
+        color: black; }
 
 /* estilo de QSOMOS */
 main .qsomos-main-section .qsomos-main-section-desc {
@@ -207,8 +214,36 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 /* estilo CONTACTO */
-.mb-3 {
-  color: black; }
+main .gallery {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  main .gallery .card {
+    width: 20%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.25s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    main .gallery .card img {
+      height: 220px; }
+    main .gallery .card h5 {
+      font-weight: 600;
+      background-color: pink;
+      padding: 5px; }
+    main .gallery .card p {
+      font-weight: 300; }
+    main .gallery .card .link-card {
+      font-weight: 300;
+      color: black;
+      background-color: whitesmoke;
+      padding: 5px; }
+  main .gallery .link-card:hover {
+    background-color: pink; }
 
 /* ANIMACIONES */
 @keyframes aparecer {
@@ -228,10 +263,11 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     font-size: 12px; }
   /* estilo de INDEX */
   main #carouselExampleIndicators {
-    margin: 20px 20px; }
+    height: 200px;
+    margin: 10px; }
   main .home-main-div-cat-h2 {
     text-align: center;
-    padding-top: 30px; }
+    padding-top: 0px; }
   main .home-main-div-categories {
     display: flex;
     justify-content: center;
@@ -261,14 +297,41 @@ main .qsomos-main-section .qsomos-main-section-ubi {
       width: 88px;
       height: 30px;
       padding: 6px;
-      background-color: pink;
+      background-color: #2e2e2e;
+      color: white;
       border-radius: 90px;
       font-size: 12px; }
+    main .prod-main-section-banner .prod-main-section-banner-a:hover {
+      background-color: pink; }
   main .prod-main-section-titulo {
     text-align: center;
     padding-top: 20px;
     animation-name: aparecer;
     animation-duration: 6s; }
+  main .container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; }
+    main .container .card {
+      width: 40%;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 10px;
+      text-align: center; }
+      main .container .card img {
+        width: 250px;
+        height: 150px; }
+      main .container .card h5 {
+        font-weight: 600;
+        font-size: 14px; }
+      main .container .card p {
+        font-weight: 300; }
+      main .container .card a {
+        font-weight: 300;
+        color: black; }
   /* estilo LIQUIDACION */
   main .sale-main-section {
     background-color: white;
@@ -278,8 +341,30 @@ main .qsomos-main-section .qsomos-main-section-ubi {
       text-align: center;
       animation-name: aparecer;
       animation-duration: 6s; }
-    main .sale-main-section span {
-      text-decoration: line-through; }
+    main .sale-main-section .container {
+      width: 100%;
+      max-width: 1300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto; }
+      main .sale-main-section .container .card {
+        width: 40%;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 10px;
+        text-align: center;
+        transition: all 0.25s; }
+        main .sale-main-section .container .card img {
+          width: 250px;
+          height: 150px; }
+        main .sale-main-section .container .card h5 {
+          font-weight: 600; }
+        main .sale-main-section .container .card p {
+          font-weight: 300; }
+        main .sale-main-section .container .card a {
+          font-weight: 300;
+          color: black; }
   /* estilo de QSOMOS */
   main .qsomos-main-section .qsomos-main-section-desc {
     color: black;
@@ -375,6 +460,30 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     padding-top: 20px;
     animation-name: aparecer;
     animation-duration: 6s; }
+  main .container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; }
+    main .container .card {
+      width: 40%;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 10px;
+      text-align: center;
+      transition: all 0.25s; }
+      main .container .card img {
+        width: 350px;
+        height: 220px; }
+      main .container .card h5 {
+        font-weight: 600; }
+      main .container .card p {
+        font-weight: 300; }
+      main .container .card a {
+        font-weight: 300;
+        color: black; }
   /* estilo LIQUIDACION */
   main .sale-main-section {
     background-color: white;
@@ -384,8 +493,30 @@ main .qsomos-main-section .qsomos-main-section-ubi {
       text-align: center;
       animation-name: aparecer;
       animation-duration: 6s; }
-  main span {
-    text-decoration: line-through; }
+    main .sale-main-section .container {
+      width: 100%;
+      max-width: 1300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto; }
+      main .sale-main-section .container .card {
+        width: 40%;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 10px;
+        text-align: center;
+        transition: all 0.25s; }
+        main .sale-main-section .container .card img {
+          width: 350px;
+          height: 220px; }
+        main .sale-main-section .container .card h5 {
+          font-weight: 600; }
+        main .sale-main-section .container .card p {
+          font-weight: 300; }
+        main .sale-main-section .container .card a {
+          font-weight: 300;
+          color: black; }
   /* estilo de QSOMOS */
   main .qsomos-main-section .qsomos-main-section-desc {
     color: black;
@@ -437,6 +568,56 @@ main .qsomos-main-section .qsomos-main-section-ubi {
   main #verMas {
     text-align: center;
     margin-bottom: 30px; }
+  /* PRODUCTOS */
+  main .container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; }
+    main .container .card {
+      width: 30%;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 10px;
+      text-align: center;
+      transition: all 0.25s; }
+      main .container .card img {
+        width: 400px;
+        height: 220px; }
+      main .container .card h5 {
+        font-weight: 600; }
+      main .container .card p {
+        font-weight: 300; }
+      main .container .card a {
+        font-weight: 300;
+        color: black; }
+  /* SALE */
+  main .sale-main-section .container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; }
+    main .sale-main-section .container .card {
+      width: 30%;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 10px;
+      text-align: center;
+      transition: all 0.25s; }
+      main .sale-main-section .container .card img {
+        width: 400px;
+        height: 220px; }
+      main .sale-main-section .container .card h5 {
+        font-weight: 600; }
+      main .sale-main-section .container .card p {
+        font-weight: 300; }
+      main .sale-main-section .container .card a {
+        font-weight: 300;
+        color: black; }
   /* estilo de QSOMOS */
   main .qsomos-main-section .qsomos-main-section-desc {
     color: black;

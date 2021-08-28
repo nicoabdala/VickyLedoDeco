@@ -127,7 +127,7 @@ main{
             padding: 10px;
         }
         .prod-main-section-banner-a:hover{
-            color: black;
+            background-color: $colorBoton;
         }
     }
 
@@ -155,38 +155,40 @@ main{
         color: black;
     }
 
-    .gallery{
+    .container{
+        width: 100%;
+        max-width: 1300px;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
 
-        .contenedor-card {
-            margin: 20px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+        .card{
+            width: 20%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            text-align: center;
+            transition: all 0.25s;
+
+            img{
+                width: 250px;
+                height: 200px;
+            }
+
             h5{
-                background-color: $colorBoton;
-                color: black;
-                font-size: 20px;
-                padding: 10px;
+                font-weight: 600;
             }
-    
+
             p{
-                text-align: center;
+                font-weight: 300;
+            }
+
+            a{
+                font-weight: 300;
+                color: black;
             }
         }
-
-        .link-card{
-            color: black;
-        }
-
-        span{
-            text-decoration: line-through;
-        }
-    }
-
-    .link-card:hover {
-        background-color: $colorBoton;
     }
 }
 
@@ -204,38 +206,40 @@ main{
             animation-duration: 6s;
         }
         
-        .gallery{
+        .container{
+            width: 100%;
+            max-width: 1300px;
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
     
-            .contenedor-card {
-                margin: 20px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        
+            .card{
+                width: 20%;
+                border-radius: 8px;
+                overflow: hidden;
+                margin: 10px;
+                text-align: center;
+                transition: all 0.25s;
+    
+                img{
+                    width: 250px;
+                    height: 220px;
+                }
+    
                 h5{
-                    background-color: $colorBoton;
-                    color: black;
-                    font-size: 20px;
-                    padding: 10px;
+                    font-weight: 600;
                 }
-        
+    
                 p{
-                    text-align: center;
+                    font-weight: 300;
+                }
+    
+                a{
+                    font-weight: 300;
+                    color: black;
                 }
             }
-    
-            .link-card{
-                color: black;
-            }
-    
-            span{
-                text-decoration: line-through;
-            }
-        }
-        
-        .link-card:hover {
-            background-color: $colorBoton;
         }
     }
 }
@@ -296,8 +300,51 @@ main{
 
 /* estilo CONTACTO */ 
 
-.mb-3{
-    color: black;
+main{
+    .gallery{
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+        .card{
+            width: 20%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            text-align: center;
+            transition: all 0.25s;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            img{
+                height: 220px;
+            }
+
+            h5{
+                font-weight: 600;
+                background-color: $colorBoton;
+                padding: 5px;
+            }
+
+            p{
+                font-weight: 300;
+            }
+
+            .link-card{
+                font-weight: 300;
+                color: black;
+                background-color: $colorBanner;
+                padding: 5px;
+            }
+        }
+
+        .link-card:hover {
+            background-color: $colorBoton;
+        }
+
+    }
 }
 
 /* ANIMACIONES */ 
@@ -334,12 +381,13 @@ main{
 main{
 
     #carouselExampleIndicators{
-        margin: 20px 20px;
+        height: 200px;
+        margin: 10px;
     }
 
     .home-main-div-cat-h2{
         text-align: center;
-        padding-top: 30px;
+        padding-top: 0px;
     }
 
     .home-main-div-categories{
@@ -388,9 +436,14 @@ main{
             width: 88px;
             height: 30px;
             padding: 6px;
-            background-color: $colorBoton;
+            background-color: rgb(46, 46, 46);
+            color: white;
             border-radius: 90px;
             font-size: 12px;
+        }
+
+        .prod-main-section-banner-a:hover{
+            background-color: $colorBoton;
         }
     }
 
@@ -399,6 +452,42 @@ main{
         padding-top: 20px;
         animation-name: aparecer;
         animation-duration: 6s;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+        .card{
+            width: 40%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            text-align: center;
+
+            img{
+                width: 250px;
+                height: 150px;
+            }
+
+            h5{
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            p{
+                font-weight: 300;
+            }
+
+            a{
+                font-weight: 300;
+                color: black;
+            }
+        }
     }
 }
 
@@ -415,9 +504,42 @@ main{
             animation-name: aparecer;
             animation-duration: 6s;
         }
-        
-        span{
-            text-decoration: line-through;
+
+        .container{
+            width: 100%;
+            max-width: 1300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+    
+            .card{
+                width: 40%;
+                border-radius: 8px;
+                overflow: hidden;
+                margin: 10px;
+                text-align: center;
+                transition: all 0.25s;
+    
+                img{
+                    width: 250px;
+                    height: 150px;
+                }
+    
+                h5{
+                    font-weight: 600;
+                }
+    
+                p{
+                    font-weight: 300;
+                }
+    
+                a{
+                    font-weight: 300;
+                    color: black;
+                    
+                }
+            }
         }
     }
 }
@@ -575,6 +697,41 @@ main{
         animation-duration: 6s;
     }
 
+    .container{
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+
+        .card{
+            width: 40%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            text-align: center;
+            transition: all 0.25s;
+
+            img{
+                width: 350px;
+                height: 220px;
+            }
+
+            h5{
+                font-weight: 600;
+            }
+
+            p{
+                font-weight: 300;
+            }
+
+            a{
+                font-weight: 300;
+                color: black;
+            }
+        }
+    }
 }
 
 /* estilo LIQUIDACION */
@@ -589,13 +746,44 @@ main{
             text-align: center;
             animation-name: aparecer;
             animation-duration: 6s;
-        } 
+        }
+        
+        .container{
+            width: 100%;
+            max-width: 1300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+    
+            .card{
+                width: 40%;
+                border-radius: 8px;
+                overflow: hidden;
+                margin: 10px;
+                text-align: center;
+                transition: all 0.25s;
+    
+                img{
+                    width: 350px;
+                    height: 220px;
+                }
+    
+                h5{
+                    font-weight: 600;
+                }
+    
+                p{
+                    font-weight: 300;
+                }
+    
+                a{
+                    font-weight: 300;
+                    color: black;
+                }
+            }
+        }
     }
-
-    span{
-        text-decoration: line-through;
-    }
-
 }
 
 /* estilo de QSOMOS */
@@ -668,25 +856,108 @@ footer{
         }
     }
 
-    /* estilo de INDEX */
+/* estilo de INDEX */
 
-main{
+    main{
 
-    .home-main-div-destacados{
-        text-align: center;
-        margin-bottom: 30px;
+        .home-main-div-destacados{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #verMas{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
     }
 
-    #verMas{
-        text-align: center;
-        margin-bottom: 30px;
+/* PRODUCTOS */ 
+
+    main{
+        .container{
+            width: 100%;
+            max-width: 1300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        
+            .card{
+                width: 30%;
+                border-radius: 8px;
+                overflow: hidden;
+                margin: 10px;
+                text-align: center;
+                transition: all 0.25s;
+        
+                img{
+                    width: 400px;
+                    height: 220px;
+                }
+        
+                h5{
+                    font-weight: 600;
+                }
+        
+                p{
+                    font-weight: 300;
+                }
+        
+                a{
+                    font-weight: 300;
+                    color: black;
+                }
+            }
+        }
     }
 
-}
+/* SALE */ 
+
+    main{
+        .sale-main-section{
+
+            .container{
+                width: 100%;
+                max-width: 1300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto;
+            
+                .card{
+                    width: 30%;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    margin: 10px;
+                    text-align: center;
+                    transition: all 0.25s;
+            
+                    img{
+                        width: 400px;
+                        height: 220px;
+                    }
+            
+                    h5{
+                        font-weight: 600;
+                    }
+            
+                    p{
+                        font-weight: 300;
+                    }
+            
+                    a{
+                        font-weight: 300;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
 
 /* estilo de QSOMOS */
 
-main{
+    main{
     .qsomos-main-section{
         .qsomos-main-section-desc{
             color: black;
@@ -730,9 +1001,9 @@ main{
             }
         }
     }
-}
+    }
 
-footer{
+    footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -748,6 +1019,6 @@ footer{
             margin: 10px;
         } 
     }
-}
+    }
 
 }
