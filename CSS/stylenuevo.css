@@ -28,6 +28,9 @@ body {
     height: 130px;
     margin-left: 20px; }
 
+html {
+  scroll-behavior: smooth; }
+
 /* FOOTER */
 footer {
   display: flex;
@@ -41,6 +44,8 @@ footer {
     footer div img {
       height: 50px;
       margin: 15px; }
+  footer .footer-div-p a {
+    color: black; }
 
 /* DECORATION */
 a:link, a:visited, a:active {
@@ -70,10 +75,6 @@ main .home-main-div-destacados {
   text-align: center;
   margin-bottom: 30px; }
 
-main .row {
-  display: flex;
-  flex-wrap: wrap; }
-
 main #verMas {
   text-align: center;
   margin: 20px; }
@@ -81,21 +82,22 @@ main #verMas {
 /* estilo PRODUCTOS */
 main .prod-main-section-banner {
   text-align: center;
-  height: 400px;
-  padding-top: 50px; }
+  padding-top: 20px;
+  position: relative; }
   main .prod-main-section-banner .prod-main-section-banner-a {
     /* boton */
-    position: absolute;
-    right: 400px;
-    margin-top: 200px;
     width: 138px;
     height: 50px;
-    padding: 10px;
-    background-color: #A88FAC;
+    color: white;
+    background-color: #2e2e2e;
     border-radius: 90px;
-    font-size: 20px; }
+    font-size: 20px;
+    position: absolute;
+    right: 300px;
+    top: 220px;
+    padding: 10px; }
   main .prod-main-section-banner .prod-main-section-banner-a:hover {
-    color: #EFCEFA; }
+    color: black; }
 
 main .prod-main-section-titulo {
   text-align: center;
@@ -103,50 +105,69 @@ main .prod-main-section-titulo {
   animation-name: aparecer;
   animation-duration: 6s; }
 
-main .botonesGaleria {
-  margin: 10px;
-  animation-name: aparecer;
-  animation-duration: 6s;
-  display: inline-block; }
+main .contenedorBotonesGaleria {
+  display: inline-flex;
+  flex-wrap: wrap; }
+  main .contenedorBotonesGaleria .botonesGaleria {
+    margin: 5px;
+    animation-name: aparecer;
+    animation-duration: 6s; }
 
-main .titulo-card {
-  padding: 20px; }
-
-main .link-card {
+main .botonesGaleria:hover {
+  background-color: #EFCEFA;
   color: black; }
 
-main .link-card:hover {
-  background-color: #6e6c6c;
-  color: white; }
+main .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  main .gallery .contenedor-card {
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    main .gallery .contenedor-card h5 {
+      background-color: pink;
+      color: black;
+      font-size: 20px;
+      padding: 10px; }
+    main .gallery .contenedor-card p {
+      text-align: center; }
+  main .gallery .link-card {
+    color: black; }
+  main .gallery span {
+    text-decoration: line-through; }
 
-main .contenedor-card {
-  margin: 5px; }
+main .link-card:hover {
+  background-color: pink; }
 
 /* estilo LIQUIDACION */
 main .sale-main-section {
   background-color: white;
   color: black;
-  padding: 20px; }
+  padding-top: 60px; }
   main .sale-main-section .sale-main-section-h1 {
     text-align: center;
     animation-name: aparecer;
-    animation-duration: 6s;
-    padding-bottom: 40px; }
-  main .sale-main-section span {
-    text-decoration: line-through; }
-  main .sale-main-section .titulo-card {
-    padding: 20px; }
-  main .sale-main-section .link-card {
-    color: black; }
-  main .sale-main-section .link-card:hover {
-    background-color: #6e6c6c;
-    color: white; }
-  main .sale-main-section .contenedor-card {
-    margin: 20px; }
-  main .sale-main-section .botonesGaleria {
-    margin: 10px;
-    animation-name: aparecer;
     animation-duration: 6s; }
+  main .sale-main-section .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    main .sale-main-section .gallery .contenedor-card {
+      margin: 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      main .sale-main-section .gallery .contenedor-card h5 {
+        background-color: pink;
+        color: black;
+        font-size: 20px;
+        padding: 10px; }
+      main .sale-main-section .gallery .contenedor-card p {
+        text-align: center; }
+    main .sale-main-section .gallery .link-card {
+      color: black; }
+    main .sale-main-section .gallery span {
+      text-decoration: line-through; }
+  main .sale-main-section .link-card:hover {
+    background-color: pink; }
 
 /* estilo de QSOMOS */
 main .qsomos-main-section .qsomos-main-section-desc {
@@ -161,17 +182,19 @@ main .qsomos-main-section .qsomos-main-section-desc {
     padding-bottom: 20px; }
 
 main .qsomos-main-section .img-thumbnail {
-  border-radius: 200px;
-  height: 200px;
+  border-radius: 100px;
+  height: 250px;
   margin: 20px;
-  background-color: #A88FAC; }
+  background-color: pink; }
 
 main .qsomos-main-section .qsomos-main-section-foto {
   text-align: center;
   padding: 50px;
   background-color: #e3e3e3; }
   main .qsomos-main-section .qsomos-main-section-foto img {
-    height: 500px; }
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 main .qsomos-main-section .qsomos-main-section-ubi {
   text-align: center;
@@ -180,6 +203,8 @@ main .qsomos-main-section .qsomos-main-section-ubi {
   color: black; }
   main .qsomos-main-section .qsomos-main-section-ubi h2, main .qsomos-main-section .qsomos-main-section-ubi p {
     text-align: center; }
+  main .qsomos-main-section .qsomos-main-section-ubi iframe {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 /* estilo CONTACTO */
 .mb-3 {
@@ -226,19 +251,17 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     margin-bottom: 30px; }
   /* estilo PRODUCTOS */
   main .prod-main-section-banner {
-    text-align: center;
-    height: 150px;
-    padding-top: 20px;
-    margin: 1px 10px; }
+    margin: 10px;
+    position: relative; }
     main .prod-main-section-banner .prod-main-section-banner-a {
       /* boton */
       position: absolute;
       right: 50px;
-      bottom: 50px;
+      top: 70px;
       width: 88px;
       height: 30px;
       padding: 6px;
-      background-color: #A88FAC;
+      background-color: pink;
       border-radius: 90px;
       font-size: 12px; }
   main .prod-main-section-titulo {
@@ -246,23 +269,17 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     padding-top: 20px;
     animation-name: aparecer;
     animation-duration: 6s; }
-  main .botonesGaleria {
-    font-size: 50%;
-    margin: 2px; }
   /* estilo LIQUIDACION */
   main .sale-main-section {
     background-color: white;
     color: black;
-    padding: 5px; }
+    padding: 30px 30px 0px 30px; }
     main .sale-main-section .sale-main-section-h1 {
       text-align: center;
       animation-name: aparecer;
       animation-duration: 6s; }
-    main .sale-main-section .botonesGaleria {
-      font-size: 50%;
-      margin: 2px; }
-  main span {
-    text-decoration: line-through; }
+    main .sale-main-section span {
+      text-decoration: line-through; }
   /* estilo de QSOMOS */
   main .qsomos-main-section .qsomos-main-section-desc {
     color: black;
@@ -280,7 +297,7 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     border-radius: 200px;
     height: 200px;
     margin: 20px;
-    background-color: #A88FAC; }
+    background-color: pink; }
   main .qsomos-main-section .qsomos-main-section-foto {
     text-align: center;
     padding: 50px;
@@ -340,18 +357,17 @@ main .qsomos-main-section .qsomos-main-section-ubi {
   /* estilo PRODUCTOS */
   main .prod-main-section-banner {
     text-align: center;
-    height: 350px;
     padding-top: 30px;
     margin: 1px 15px; }
     main .prod-main-section-banner .prod-main-section-banner-a {
       /* boton */
       position: absolute;
       right: 60px;
-      bottom: 160px;
+      top: 150px;
       width: 110px;
       height: 40px;
       padding: 9px;
-      background-color: #A88FAC;
+      background-color: pink;
       border-radius: 90px;
       font-size: 15px; }
   main .prod-main-section-titulo {
@@ -363,7 +379,7 @@ main .qsomos-main-section .qsomos-main-section-ubi {
   main .sale-main-section {
     background-color: white;
     color: black;
-    padding: 20px; }
+    padding-top: 20px; }
     main .sale-main-section .sale-main-section-h1 {
       text-align: center;
       animation-name: aparecer;
@@ -385,7 +401,7 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     border-radius: 200px;
     height: 200px;
     margin: 20px;
-    background-color: #A88FAC; }
+    background-color: pink; }
   main .qsomos-main-section .qsomos-main-section-foto {
     text-align: center;
     padding: 50px;
@@ -436,7 +452,7 @@ main .qsomos-main-section .qsomos-main-section-ubi {
     border-radius: 200px;
     height: 200px;
     margin: 20px;
-    background-color: #A88FAC; }
+    background-color: pink; }
   main .qsomos-main-section .qsomos-main-section-foto {
     text-align: center;
     padding: 50px;

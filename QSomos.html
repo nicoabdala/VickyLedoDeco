@@ -21,13 +21,18 @@
 
 <body>
     <header>
+        <!--Menu de Navegacion-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img class="nav-logo" src="IMG/logovicky-removebg-preview.png"></a>
+            <a class="navbar-brand" href="index.html">
+                <img class="nav-logo" src="IMG/logovicky-removebg-preview.png">
+            </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="collapse navbar-collapse ul-desplegable" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
@@ -36,17 +41,18 @@
                         <a class="nav-link" href="Productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Liquidacion.html">Sale!</a>
+                        <a class="nav-link" href="Liquidacion.html">¡Sale!</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="QSomos.html">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        
     </header>
 
     <main>
@@ -54,22 +60,22 @@
             <div class="qsomos-main-section-desc">
                 <h1>Quienes Somos</h1>
                 <p>
-                    Hola! 
-                    Mi nombre es Virginia y soy una madre de 2 chicos muy familiera.
-                    Comence trabajando en la empresa familiar, hasta que decidí comenzar con este
-                    emprendimiento hace 10 años, debido a mi gusto y pasion por la decoracion del hogar.
+                    Hola, soy Vicky! Soy mamá de 2 chicos y muy familiera.
+                    Comence trabajando en la empresa familiar, hasta que decidí incursionar en el mundo de la decoración
+                    hace mas de 10 años. 
                 </p>
                 <p class="texto-dos">
-                    Primero lo hacia por gusto puro, hasta que lo que hacía (y hago) para mi,
-                    pensé en hacerlo tambien para ustedes.
+                    Comencé con "Nadima Mia", dedicado a los mas chicos, y con el tiempo mi pasión por la deco me llevó 
+                    a arrancar este proyecto de decoración integral del hogar.
                     Desde entonces trabajo junto a un grupo de gente maravillosa que confía en mi y pone todo su amor y
                     compromiso para que los productos sean los mejores!
                 </p>
                 <p>
-                    Ofrecemos asesoramiento, desarrollo de proyectos, y productos a medida.
-                    Trabajamos para interpretar las necesidades y expectativas del cliente, acompañándolo en cada etapa del proceso. <br>
+                    Ofrecemos asesoramiento, desarrollo de proyectos, y productos personalizados.
+                    Trabajamos para interpretar las necesidades y expectativas del cliente, acompañándolo en cada 
+                    etapa del proceso. <br>
                 </p>
-                <img src="IMG/fotoVickyEJemplo.jpg" alt="..." class="img-thumbnail" data-aos="zoom-in">
+                <img src="IMG/PerfilVicky.JPG" alt="..." class="img-thumbnail" data-aos="zoom-in">
             </div>
 
             <div class="qsomos-main-section-foto">
@@ -82,8 +88,8 @@
             </div>
 
             <div class="qsomos-main-section-ubi">
-                <h2>Nos encontramos en: </h2>
-                <p>Showroom ubicado en Bartolomé Mitre al 3300, Provincia de Buenos Aires</p>
+                <h2>Nos encontramos en:</h2>
+                <p>Showroom ubicado en Bartolomé Mitre 3353, Provincia de Buenos Aires</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d581.1149052445364!2d-58.52388652740261!3d-34.5210745612917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0c3a962649b%3A0xe54fcf060ac1f14d!2sAv.%20Bartolom%C3%A9%20Mitre%203300%2C%20B1605BUO%20Munro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1626881446927!5m2!1ses-419!2sar" 
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
@@ -92,7 +98,8 @@
     </main>
 
     <footer>
-        <div class="footer-div-redes">
+        <!--Redes-->
+        <div class="footer-div-redes" id="contacto">
             <h2>¡Contactanos!</h2>
             <a href="https://www.instagram.com/vickyledodecoracion/?hl=es-la" target="_blank">
                 <img src="IMG/001-instagram.svg" alt="Instagram">
@@ -101,13 +108,15 @@
                 <img src="IMG/001-whatsapp.svg" alt="Whatsapp">
             </a>
         </div>
-
+        <!--Info-->
         <div class="footer-div-p">
-            <p>Suscribite a nuestro Newsletter en Contacto</p>
             <p>La visita a nuestro Showroom es unicamente con cita previa</p>
             <p>Vicky Ledo Deco © / Todos los derechos reservados</p>
+            <p>Pagina web hecha por 
+                <a href="www.twitter.com/NicoAbdalaDev">@NicoAbdalaDev</a>
+            </p>
         </div>
-
+        <!--Formas de Pago-->
         <div class="footer-div-pagos">
             <h2>Formas de Pago</h2>
             <img src="IMG/001-payment-method.svg" alt="Efectivo">

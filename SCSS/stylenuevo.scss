@@ -8,7 +8,7 @@
 a { color: white;} 
 
 $colorFondo: white;
-$colorBoton: #A88FAC;
+$colorBoton: rgb(255, 192, 203);
 $colorHover: #EFCEFA;
 $colorBanner: whitesmoke;
 
@@ -28,6 +28,10 @@ body{
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* FOOTER */ 
 
 footer{
@@ -45,6 +49,12 @@ footer{
             height: 50px;
             margin: 15px;
         } 
+    }
+
+    .footer-div-p{
+        a{
+            color: black;
+        }
     }
 }
 
@@ -89,11 +99,6 @@ main{
         margin-bottom: 30px;
     }
 
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     #verMas{
         text-align: center;
         margin: 20px;
@@ -106,22 +111,23 @@ main{
     
     .prod-main-section-banner{
         text-align: center;
-        height: 400px;
-        padding-top: 50px;
+        padding-top: 20px;
+        position: relative;
 
         .prod-main-section-banner-a{   /* boton */
-            position: absolute;
-            right: 400px;
-            margin-top: 200px;
             width: 138px;
             height: 50px;
-            padding: 10px;
-            background-color: $colorBoton;
+            color: white;
+            background-color: rgb(46, 46, 46);
             border-radius: 90px;
             font-size: 20px;
+            position: absolute;
+            right: 300px;
+            top: 220px;
+            padding: 10px;
         }
         .prod-main-section-banner-a:hover{
-            color: $colorHover;
+            color: black;
         }
     }
 
@@ -133,28 +139,54 @@ main{
         animation-duration: 6s;
     }
 
-    .botonesGaleria{
-        margin: 10px;
-        animation-name: aparecer;
-        animation-duration: 6s;
-        display: inline-block;
-    }
+    .contenedorBotonesGaleria{
+        display: inline-flex;
+        flex-wrap: wrap;
 
-    .titulo-card {
-        padding: 20px;
+        .botonesGaleria{
+            margin: 5px;
+            animation-name: aparecer;
+            animation-duration: 6s;
         }
-        
-        .link-card {
-        color: black;
-        }
-        
-    .link-card:hover {
-        background-color: rgb(110, 108, 108);
-        color: white;
     }
     
-    .contenedor-card {
-        margin: 5px;
+    .botonesGaleria:hover{
+        background-color: $colorHover;
+        color: black;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .contenedor-card {
+            margin: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+            h5{
+                background-color: $colorBoton;
+                color: black;
+                font-size: 20px;
+                padding: 10px;
+            }
+    
+            p{
+                text-align: center;
+            }
+        }
+
+        .link-card{
+            color: black;
+        }
+
+        span{
+            text-decoration: line-through;
+        }
+    }
+
+    .link-card:hover {
+        background-color: $colorBoton;
     }
 }
 
@@ -164,40 +196,46 @@ main{
     .sale-main-section{
         background-color: $colorFondo;
         color: black;
-        padding: 20px;
+        padding-top: 60px;
 
         .sale-main-section-h1{
             text-align: center;
             animation-name: aparecer;
             animation-duration: 6s;
-            padding-bottom: 40px;
-        }
-
-        span{
-            text-decoration: line-through;
-        }
-
-        .titulo-card {
-            padding: 20px;
-            }
-            
-            .link-card {
-            color: black;
-            }
-            
-        .link-card:hover {
-            background-color: rgb(110, 108, 108);
-            color: white;
         }
         
-        .contenedor-card {
-            margin: 20px;
+        .gallery{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+            .contenedor-card {
+                margin: 20px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+                h5{
+                    background-color: $colorBoton;
+                    color: black;
+                    font-size: 20px;
+                    padding: 10px;
+                }
+        
+                p{
+                    text-align: center;
+                }
+            }
+    
+            .link-card{
+                color: black;
+            }
+    
+            span{
+                text-decoration: line-through;
+            }
         }
-
-        .botonesGaleria{
-            margin: 10px;
-            animation-name: aparecer;
-            animation-duration: 6s;
+        
+        .link-card:hover {
+            background-color: $colorBoton;
         }
     }
 }
@@ -221,8 +259,8 @@ main{
         }
 
         .img-thumbnail{
-            border-radius: 200px;
-            height: 200px;
+            border-radius: 100px;
+            height: 250px;
             margin: 20px;
             background-color: $colorBoton;
         }
@@ -234,6 +272,8 @@ main{
 
             img{
                 height: 500px;
+                border-radius: 50px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
         }
 
@@ -245,6 +285,10 @@ main{
             
             h2, p{
                 text-align: center;
+            }
+
+            iframe{
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
         }
     }
@@ -334,15 +378,13 @@ main{
 main{
 
     .prod-main-section-banner{
-        text-align: center;
-        height: 150px;
-        padding-top: 20px;
-        margin: 1px 10px;
+        margin: 10px;
+        position: relative;
 
         .prod-main-section-banner-a{   /* boton */
             position: absolute;
             right: 50px;
-            bottom: 50px;
+            top: 70px;
             width: 88px;
             height: 30px;
             padding: 6px;
@@ -358,11 +400,6 @@ main{
         animation-name: aparecer;
         animation-duration: 6s;
     }
-
-    .botonesGaleria{
-        font-size: 50%;
-        margin: 2px;
-    }
 }
 
 /* estilo LIQUIDACION */
@@ -371,22 +408,17 @@ main{
     .sale-main-section{
         background-color: $colorFondo;
         color: black;
-        padding: 5px;
+        padding: 30px 30px 0px 30px;
 
         .sale-main-section-h1{
             text-align: center;
             animation-name: aparecer;
             animation-duration: 6s;
-        } 
-
-        .botonesGaleria{
-            font-size: 50%;
-            margin: 2px;
         }
-    }
-
-    span{
-        text-decoration: line-through;
+        
+        span{
+            text-decoration: line-through;
+        }
     }
 }
 
@@ -520,14 +552,13 @@ main{
 
     .prod-main-section-banner{
         text-align: center;
-        height: 350px;
         padding-top: 30px;
         margin: 1px 15px;
 
         .prod-main-section-banner-a{   /* boton */
             position: absolute;
             right: 60px;
-            bottom: 160px;
+            top: 150px;
             width: 110px;
             height: 40px;
             padding: 9px;
@@ -552,7 +583,7 @@ main{
     .sale-main-section{
         background-color: $colorFondo;
         color: black;
-        padding: 20px;
+        padding-top: 20px;
 
         .sale-main-section-h1{
             text-align: center;
@@ -564,6 +595,7 @@ main{
     span{
         text-decoration: line-through;
     }
+
 }
 
 /* estilo de QSOMOS */

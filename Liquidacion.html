@@ -20,13 +20,18 @@
 
 <body>
     <header>
+        <!--Menu de Navegacion-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img class="nav-logo" src="IMG/logovicky-removebg-preview.png"></a>
+            <a class="navbar-brand" href="index.html">
+                <img class="nav-logo" src="IMG/logovicky-removebg-preview.png">
+            </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="collapse navbar-collapse ul-desplegable" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
@@ -35,391 +40,357 @@
                         <a class="nav-link" href="Productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Liquidacion.html">Sale!</a>
+                        <a class="nav-link" href="Liquidacion.html">¡Sale!</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="QSomos.html">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        
     </header>
     
     <main>    
         <section class="sale-main-section">
             <!--Titulo-->
             <h1 class="sale-main-section-h1">
-                ¡Precios de locas!
+                ¡Liquidacion del mes!
             </h1>
-            <!--Menu de Categorias-->
-            <div class="col-md-12 d-flex justify-content-center mb-5 contenedorBotonesGaleria">
-                <button type="button" class="btn btn-outline-dark waves-effect filter botonesGaleria"
-                    data-rel="all">TODOS</button>
-                <button type="button" class="btn btn-outline-dark waves-effect filter botonesGaleria"
-                    data-rel="1">EDREDONES</button>
-                <button type="button" class="btn btn-outline-dark waves-effect filter botonesGaleria"
-                    data-rel="2">ALMOHADONES</button>
-                <button type="button" class="btn btn-outline-dark waves-effect filter botonesGaleria"
-                    data-rel="3">FUNDAS</button>
-                <button type="button" class="btn btn-outline-dark waves-effect filter botonesGaleria"
-                    data-rel="4">CORTINAS</button>
-            </div>
             <!--Productos de Liquidacion-->
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center gallery">
-                    
-                    <div class="card h-100 col-mb-5 all 3 contenedor-card">
-                        <section id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="card h-100 col-mb-5 all 2 contenedor-card">
+                        <section id="carouselExampleFade7" class="carousel slide carousel-fade" data-ride="carousel">
                             <section class="carousel-inner">
+                                <!-- Product image-->
                                 <section class="carousel-item active">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/Rectangle 5.png" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaTussorSillon.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1800.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1801.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor2.PNG" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1804.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1805.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor3.jpg" alt="Funda Sillon">
                                 </section>
                             </section>
-                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleFade7" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleFade7" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </section>
-                        <!-- Product image-->
-                        <!-- Product details-->
                         <!-- Product name-->
-                        <h5 class="fw-bolder text-center titulo-card">Pie de Cama</h5>
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Tussor</h5>
+                        <!-- Product details-->
+                        <p>Hasta 1.70 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
                         <!-- Product price-->
                         <p class="text-center">
-                            <span class="text-danger text-decoration-line-through">$10.000 </span> $7.000
+                            <span class="text-danger text-decoration-line-through">$24.900 </span> $22.410
                         </p>
+
                         <!-- Product actions-->
-                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Me%20interesa%20el%20producto%20%20Pie de Cama - Gasa Tejida%20que%20estás%20vendiendo" 
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Tussor 1.70" 
                             target="_blank">Pedilo por Whatsapp
                         </a>
                     </div>
 
                     <div class="card h-100 col-mb-5 all 2 contenedor-card">
-                        <section id="carouselExampleFade1" class="carousel slide carousel-fade" data-ride="carousel">
+                        <section id="carouselExampleFade8" class="carousel slide carousel-fade" data-ride="carousel">
                             <section class="carousel-inner">
+                                <!-- Product image-->
                                 <section class="carousel-item active">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_3740.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaTussorSillon2.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1800.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1801.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor2.PNG" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1804.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1805.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor3.jpg" alt="Funda Sillon">
                                 </section>
                             </section>
-                            <a class="carousel-control-prev" href="#carouselExampleFade1" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleFade8" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade1" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleFade8" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </section>
-                        <!-- Product image-->
-                        <!-- Product details-->
                         <!-- Product name-->
-                        <h5 class="fw-bolder text-center titulo-card">Almohadones de Seda</h5>
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Tussor</h5>
+                        <!-- Product details-->
+                        <p>Hasta 2.00 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
                         <!-- Product price-->
                         <p class="text-center">
-                            <span class="text-danger text-decoration-line-through">$9.000 </span> $7.000
+                            <span class="text-danger text-decoration-line-through">$26.900 </span> $24.210
                         </p>
                         <!-- Product actions-->
-                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Me%20interesa%20el%20producto%20%20Pie de Cama - Gasa Tejida%20que%20estás%20vendiendo" 
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Tussor 2" 
                             target="_blank">Pedilo por Whatsapp
                         </a>
                     </div>
 
                     <div class="card h-100 col-mb-5 all 2 contenedor-card">
-                        <section id="carouselExampleFade2" class="carousel slide carousel-fade" data-ride="carousel">
+                        <section id="carouselExampleFade9" class="carousel slide carousel-fade" data-ride="carousel">
                             <section class="carousel-inner">
+                                <!-- Product image-->
                                 <section class="carousel-item active">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1801.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaTussorSillon3.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1800.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1801.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor2.PNG" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1804.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1805.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor3.jpg" alt="Funda Sillon">
                                 </section>
                             </section>
-                            <a class="carousel-control-prev" href="#carouselExampleFade2" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleFade9" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade2" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleFade9" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </section>
-                        <!-- Product image-->
-                        <!-- Product details-->
                         <!-- Product name-->
-                        <h5 class="fw-bolder text-center titulo-card">Almohadones Rellenos</h5>
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Tussor</h5>
+                        <!-- Product details-->
+                        <p>Hasta 2.40 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
                         <!-- Product price-->
                         <p class="text-center">
-                            <span class="text-danger text-decoration-line-through">$8.000 </span> $5.000
+                            <span class="text-danger text-decoration-line-through">$29.900 </span> $26.910
                         </p>
                         <!-- Product actions-->
-                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Me%20interesa%20el%20producto%20%20Pie de Cama - Gasa Tejida%20que%20estás%20vendiendo" 
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Tussor 2.40" 
                             target="_blank">Pedilo por Whatsapp
                         </a>
                     </div>
 
-                    <div class="card h-100 col-mb-5 all 1 contenedor-card">
-                        <section id="carouselExampleFade3" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="card h-100 col-mb-5 all 2 contenedor-card">
+                        <section id="carouselExampleFade10" class="carousel slide carousel-fade" data-ride="carousel">
                             <section class="carousel-inner">
+                                <!-- Product image-->
                                 <section class="carousel-item active">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1805.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaTussorSillon4.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1800.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1801.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor2.PNG" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1804.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1805.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/ColoresTussor3.jpg" alt="Funda Sillon">
                                 </section>
                             </section>
-                            <a class="carousel-control-prev" href="#carouselExampleFade3" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleFade10" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade3" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleFade10" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </section>
-                        <!-- Product image-->
-                        <!-- Product details-->
                         <!-- Product name-->
-                        <h5 class="fw-bolder text-center titulo-card">Edredon Reversible</h5>
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Tussor</h5>
+                        <!-- Product details-->
+                        <p>Desde 2.40 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
                         <!-- Product price-->
                         <p class="text-center">
-                            <span class="text-danger text-decoration-line-through">$12.000 </span> $7.000
+                            <span class="text-danger text-decoration-line-through">$32.900 </span> $29.610
                         </p>
                         <!-- Product actions-->
-                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Me%20interesa%20el%20producto%20%20Pie de Cama - Gasa Tejida%20que%20estás%20vendiendo" 
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Tussor Grande" 
                             target="_blank">Pedilo por Whatsapp
                         </a>
                     </div>
 
-                    <div class="card h-100 col-mb-5 all 3 contenedor-card">
-                        <section id="carouselExampleFade4" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="card h-100 col-mb-5 all 2 contenedor-card">
+                        <section id="carouselExampleFade12" class="carousel slide carousel-fade" data-ride="carousel">
                             <section class="carousel-inner">
+                                <!-- Product image-->
                                 <section class="carousel-item active">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_3728.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaSillonPanama2.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1800.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1801.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1804.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1805.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaPanamaColores.jpg" alt="Funda Sillon">
                                 </section>
                             </section>
-                            <a class="carousel-control-prev" href="#carouselExampleFade4" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleFade12" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade4" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleFade12" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </section>
-                        <!-- Product image-->
-                        <!-- Product details-->
                         <!-- Product name-->
-                        <h5 class="fw-bolder text-center titulo-card">Pie de Cama</h5>
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Panama</h5>
+                        <!-- Product details-->
+                        <p>Hasta 1.70 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
                         <!-- Product price-->
                         <p class="text-center">
-                            <span class="text-danger text-decoration-line-through">$6.000 </span> $3.000
+                            <span class="text-danger text-decoration-line-through">$27.900 </span> $25.110
                         </p>
                         <!-- Product actions-->
-                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Me%20interesa%20el%20producto%20%20Pie de Cama - Gasa Tejida%20que%20estás%20vendiendo" 
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Panama 1.70" 
                             target="_blank">Pedilo por Whatsapp
                         </a>
                     </div>
 
-                    <div class="card h-100 col-mb-5 all 4 contenedor-card">
-                        <section id="carouselExampleFade5" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="card h-100 col-mb-5 all 2 contenedor-card">
+                        <section id="carouselExampleFade13" class="carousel slide carousel-fade" data-ride="carousel">
                             <section class="carousel-inner">
+                                <!-- Product image-->
                                 <section class="carousel-item active">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_3726.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaSillonPanama3.jpg" alt="Funda Sillon">
                                 </section>
                                 <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1800.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1801.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1804.jpg" alt="Pie de Cama">
-                                </section>
-                                <section class="carousel-item">
-                                    <p class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </p>
-                                    <img class="card-img-top imagen-card" src="IMG/IMG_1805.jpg" alt="Pie de Cama">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaPanamaColores.jpg" alt="Funda Sillon">
                                 </section>
                             </section>
-                            <a class="carousel-control-prev" href="#carouselExampleFade5" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleFade13" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleFade5" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleFade13" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </section>
-                        <!-- Product image-->
-                        <!-- Product details-->
                         <!-- Product name-->
-                        <h5 class="fw-bolder text-center titulo-card">Cortinas</h5>
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Panama</h5>
+                        <!-- Product details-->
+                        <p>Hasta 2.00 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
                         <!-- Product price-->
                         <p class="text-center">
-                            <span class="text-danger text-decoration-line-through">$8.000 </span> $7.000
+                            <span class="text-danger text-decoration-line-through">$29.900 </span> $26.910
                         </p>
                         <!-- Product actions-->
-                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Me%20interesa%20el%20producto%20%20Pie de Cama - Gasa Tejida%20que%20estás%20vendiendo" 
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Panama 2.00" 
                             target="_blank">Pedilo por Whatsapp
                         </a>
                     </div>
 
+                    <div class="card h-100 col-mb-5 all 2 contenedor-card">
+                        <section id="carouselExampleFade14" class="carousel slide carousel-fade" data-ride="carousel">
+                            <section class="carousel-inner">
+                                <!-- Product image-->
+                                <section class="carousel-item active">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaSillonPanama4.jpg" alt="Funda Sillon">
+                                </section>
+                                <section class="carousel-item">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaPanamaColores.jpg" alt="Funda Sillon">
+                                </section>
+                            </section>
+                            <a class="carousel-control-prev" href="#carouselExampleFade14" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade14" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </section>
+                        <!-- Product name-->
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Panama</h5>
+                        <!-- Product details-->
+                        <p>Hasta 2.40 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
+                        <!-- Product price-->
+                        <p class="text-center">
+                            <span class="text-danger text-decoration-line-through">$32.900 </span> $29.610
+                        </p>
+                        <!-- Product actions-->
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Panama 2.40" 
+                            target="_blank">Pedilo por Whatsapp
+                        </a>
+                    </div>
+
+                    <div class="card h-100 col-mb-5 all 2 contenedor-card">
+                        <section id="carouselExampleFade15" class="carousel slide carousel-fade" data-ride="carousel">
+                            <section class="carousel-inner">
+                                <!-- Product image-->
+                                <section class="carousel-item active">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaPanamaSillon.jpg" alt="Funda Sillon">
+                                </section>
+                                <section class="carousel-item">
+                                    <img class="card-img-top imagen-card" src="IMG/FundaPanamaColores.jpg" alt="Funda Sillon">
+                                </section>
+                            </section>
+                            <a class="carousel-control-prev" href="#carouselExampleFade15" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade15" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </section>
+                        <!-- Product name-->
+                        <h5 class="fw-bolder text-center titulo-card">Funda Sillon Recto Panama</h5>
+                        <!-- Product details-->
+                        <p>Desde 2.40 mts</p>
+                        <p class="badge bg-danger text-white">
+                            Sale
+                        </p>
+                        <!-- Product price-->
+                        <p class="text-center">
+                            <span class="text-danger text-decoration-line-through">$35.900 </span> $32.310
+                        </p>
+                        <!-- Product actions-->
+                        <a class="text-center card-footer  link-card" href="https://wa.me/5491122620787/?text=Hola!%20Me%20interesa%20el%20producto%20%20Funda Sillon Recto Panama Grande" 
+                            target="_blank">Pedilo por Whatsapp
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-div-redes">
+        <!--Redes-->
+        <div class="footer-div-redes" id="contacto">
             <h2>¡Contactanos!</h2>
             <a href="https://www.instagram.com/vickyledodecoracion/?hl=es-la" target="_blank">
                 <img src="IMG/001-instagram.svg" alt="Instagram">
@@ -428,13 +399,15 @@
                 <img src="IMG/001-whatsapp.svg" alt="Whatsapp">
             </a>
         </div>
-
+        <!--Info-->
         <div class="footer-div-p">
-            <p>Suscribite a nuestro Newsletter en Contacto</p>
             <p>La visita a nuestro Showroom es unicamente con cita previa</p>
             <p>Vicky Ledo Deco © / Todos los derechos reservados</p>
+            <p>Pagina web hecha por 
+                <a href="www.twitter.com/NicoAbdalaDev">@NicoAbdalaDev</a>
+            </p>
         </div>
-
+        <!--Formas de Pago-->
         <div class="footer-div-pagos">
             <h2>Formas de Pago</h2>
             <img src="IMG/001-payment-method.svg" alt="Efectivo">
