@@ -54,7 +54,8 @@ a:link, a:visited, a:active {
 /* estilo de INDEX */
 main #carouselExampleIndicators {
   border-radius: 50px;
-  margin: 20px 40px; }
+  margin: 20px 40px;
+  position: relative; }
 
 main .home-main-div-cat-h2 {
   text-align: center;
@@ -63,8 +64,7 @@ main .home-main-div-cat-h2 {
 main .home-main-div-categories {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 150px; }
+  align-items: center; }
   main .home-main-div-categories img {
     height: 90px;
     margin: 30px; }
@@ -119,28 +119,26 @@ main .botonesGaleria:hover {
 
 main .container {
   width: 100%;
-  max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: auto; }
+  justify-content: center; }
   main .container .card {
-    width: 20%;
     border-radius: 8px;
     overflow: hidden;
-    margin: 10px;
-    text-align: center;
-    transition: all 0.25s; }
+    text-align: center; }
     main .container .card img {
       width: 250px;
       height: 200px; }
     main .container .card h5 {
-      font-weight: 600; }
+      font-weight: 600;
+      padding: 100px; }
     main .container .card p {
       font-weight: 300; }
     main .container .card a {
       font-weight: 300;
       color: black; }
+  main .container .card:hover {
+    transform: scale(1.05); }
 
 /* estilo LIQUIDACION */
 main .sale-main-section {
@@ -151,30 +149,6 @@ main .sale-main-section {
     text-align: center;
     animation-name: aparecer;
     animation-duration: 6s; }
-  main .sale-main-section .container {
-    width: 100%;
-    max-width: 1300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto; }
-    main .sale-main-section .container .card {
-      width: 20%;
-      border-radius: 8px;
-      overflow: hidden;
-      margin: 10px;
-      text-align: center;
-      transition: all 0.25s; }
-      main .sale-main-section .container .card img {
-        width: 250px;
-        height: 220px; }
-      main .sale-main-section .container .card h5 {
-        font-weight: 600; }
-      main .sale-main-section .container .card p {
-        font-weight: 300; }
-      main .sale-main-section .container .card a {
-        font-weight: 300;
-        color: black; }
 
 /* estilo de QSOMOS */
 main .qsomos-main-section .qsomos-main-section-desc {
@@ -263,11 +237,10 @@ main .gallery {
     font-size: 12px; }
   /* estilo de INDEX */
   main #carouselExampleIndicators {
-    height: 200px;
     margin: 10px; }
   main .home-main-div-cat-h2 {
     text-align: center;
-    padding-top: 0px; }
+    padding-top: 10px; }
   main .home-main-div-categories {
     display: flex;
     justify-content: center;
@@ -316,17 +289,18 @@ main .gallery {
     justify-content: center;
     margin: auto; }
     main .container .card {
-      width: 40%;
+      width: 45%;
       border-radius: 8px;
       overflow: hidden;
-      margin: 10px;
+      margin: 5px;
       text-align: center; }
       main .container .card img {
         width: 250px;
-        height: 150px; }
+        height: 200px; }
       main .container .card h5 {
         font-weight: 600;
-        font-size: 14px; }
+        font-size: 14px;
+        padding: 5px; }
       main .container .card p {
         font-weight: 300; }
       main .container .card a {
@@ -468,7 +442,7 @@ main .gallery {
     justify-content: center;
     margin: auto; }
     main .container .card {
-      width: 40%;
+      width: 35%;
       border-radius: 8px;
       overflow: hidden;
       margin: 10px;
@@ -585,7 +559,7 @@ main .gallery {
       transition: all 0.25s; }
       main .container .card img {
         width: 400px;
-        height: 220px; }
+        height: 250px; }
       main .container .card h5 {
         font-weight: 600; }
       main .container .card p {

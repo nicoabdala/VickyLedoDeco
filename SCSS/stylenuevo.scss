@@ -71,6 +71,7 @@ main{
     #carouselExampleIndicators{
         border-radius: 50px;
         margin: 20px 40px;
+        position: relative;
     }
 
     .home-main-div-cat-h2{
@@ -82,7 +83,6 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 150px;
 
         img{
             height: 90px;
@@ -157,19 +157,14 @@ main{
 
     .container{
         width: 100%;
-        max-width: 1300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: auto;
 
         .card{
-            width: 20%;
             border-radius: 8px;
             overflow: hidden;
-            margin: 10px;
             text-align: center;
-            transition: all 0.25s;
 
             img{
                 width: 250px;
@@ -178,6 +173,7 @@ main{
 
             h5{
                 font-weight: 600;
+                padding: 100px;
             }
 
             p{
@@ -188,6 +184,10 @@ main{
                 font-weight: 300;
                 color: black;
             }
+        }
+        
+        .card:hover{
+            transform: scale(1.05);
         }
     }
 }
@@ -204,42 +204,6 @@ main{
             text-align: center;
             animation-name: aparecer;
             animation-duration: 6s;
-        }
-        
-        .container{
-            width: 100%;
-            max-width: 1300px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: auto;
-    
-            .card{
-                width: 20%;
-                border-radius: 8px;
-                overflow: hidden;
-                margin: 10px;
-                text-align: center;
-                transition: all 0.25s;
-    
-                img{
-                    width: 250px;
-                    height: 220px;
-                }
-    
-                h5{
-                    font-weight: 600;
-                }
-    
-                p{
-                    font-weight: 300;
-                }
-    
-                a{
-                    font-weight: 300;
-                    color: black;
-                }
-            }
         }
     }
 }
@@ -381,13 +345,12 @@ main{
 main{
 
     #carouselExampleIndicators{
-        height: 200px;
         margin: 10px;
     }
 
     .home-main-div-cat-h2{
         text-align: center;
-        padding-top: 0px;
+        padding-top: 10px;
     }
 
     .home-main-div-categories{
@@ -463,20 +426,21 @@ main{
         margin: auto;
 
         .card{
-            width: 40%;
+            width: 45%;
             border-radius: 8px;
             overflow: hidden;
-            margin: 10px;
+            margin: 5px;
             text-align: center;
 
             img{
                 width: 250px;
-                height: 150px;
+                height: 200px;
             }
 
             h5{
                 font-weight: 600;
                 font-size: 14px;
+                padding: 5px;
             }
 
             p{
@@ -706,7 +670,7 @@ main{
         margin: auto;
 
         .card{
-            width: 40%;
+            width: 35%;
             border-radius: 8px;
             overflow: hidden;
             margin: 10px;
@@ -893,7 +857,7 @@ footer{
         
                 img{
                     width: 400px;
-                    height: 220px;
+                    height: 250px;
                 }
         
                 h5{
