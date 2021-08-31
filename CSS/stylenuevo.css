@@ -138,7 +138,7 @@ main .container {
       font-weight: 300;
       color: black; }
   main .container .card:hover {
-    transform: scale(1.05); }
+    transform: scale(1.02); }
 
 /* estilo LIQUIDACION */
 main .sale-main-section {
